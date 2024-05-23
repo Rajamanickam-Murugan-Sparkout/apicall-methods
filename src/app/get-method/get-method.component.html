@@ -1,0 +1,14 @@
+<!-- <p>get-method works!</p> -->
+<!-- <pre>{{ this.obj.data | json}}</pre> -->
+<h1 class="container">Get Method</h1>
+<section class="container d-flex flex-wrap gap-5 justify-content-center mt-5">
+    <div *ngFor="let title of this.obj.data" class="card d-flex justify-content-center w-25">
+        <div class="d-flex justify-content-center">
+            <img src="{{title.avatar}}" alt="img" card="card-image-top" width="150px" height="150px">
+        </div>
+        <div class="card-body text-center">
+            <h2 class="card-title">{{ title.first_name }}</h2>
+            <p class="card-title">{{ title.email }}</p>
+        </div>
+    </div>
+</section>
